@@ -7,6 +7,6 @@
 #ifndef ALGO_ITEROP_H
 #define ALGO_ITEROP_H
 
-template <class InputIterator> bool starts_with(InputIterator main_lst, InputIterator beginning);
+template <class InputIterator> bool starts_with(const InputIterator main_lst, const InputIterator beginning);
 
 #endif // ALGO_ITEROP_H

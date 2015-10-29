@@ -10,7 +10,9 @@
 #include <vector>
 #include <string>
 
-std::vector<std::string> split(const std::string &haystack, const char needle, int min_capacity = 0);
-std::vector<std::string> split(const std::string &haystack, const std::string &needle, int min_capacity = 0);
+std::vector<std::string> split(const std::string haystack, const char needle, int min_capacity = 0);
+std::vector<std::string> split(const std::string haystack, const std::string needle, int min_capacity = 0);
+
+bool starts_with(const std::string main_str, const std::string beginning);
 
 #endif // ALGO_STROP_H
