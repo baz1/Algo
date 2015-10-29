@@ -5,7 +5,7 @@
  */
 
 /*!
-    \headerfile <algo/iterop>
+    \headerfile <algo/iterop.h>
     \inmodule Algo
     \ingroup Algo
 
@@ -15,7 +15,7 @@
 
 /*!
     \fn bool starts_with(const InputIterator main_lst, const InputIterator beginning)
-    \relates <algo/iterop>
+    \relates <algo/iterop.h>
     Returns \c true if \a main_lst starts with \a beginning, \c false otherwise.
 
     \note This function uses the comparison operator == and is linear in the length of beginning.

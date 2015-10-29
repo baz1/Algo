@@ -2,7 +2,7 @@ QDOC=qdoc
 
 all: doc
 
-doc: src/* config.qdocconf
+doc: algo/* algo.h algo.qdoc config.qdocconf
 	$(QDOC) config.qdocconf
 
 clean:

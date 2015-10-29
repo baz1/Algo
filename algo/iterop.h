@@ -9,7 +9,7 @@
 
 template <class InputIterator> bool starts_with(const InputIterator main_lst, const InputIterator beginning)
 {
-    InputIterator::iterator it1 = main_lst.begin(), it2 = beginning.begin();
+    typename InputIterator::iterator it1 = main_lst.begin(), it2 = beginning.begin();
     while (it2 != beginning.end())
     {
         if (it1 == main_lst.end())

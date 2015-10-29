@@ -1,6 +1,15 @@
-/*! \group Algo
-    \title Algo
-    \target Algo
+/*
+ * Copyright (c) 2015, Rémi Bazin <bazin.remi@gmail.com>
+ * All rights reserved.
+ * See LICENSE for licensing details.
+ */
 
-    Various algorithmic tools
+/*!
+    \headerfile <algo.h>
+    \inmodule Algo
+    \ingroup Algo
+
+    \title Includes all the Algo library.
+    \brief This file includes all the content of this library.
 */
+

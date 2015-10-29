@@ -55,8 +55,8 @@ HTML.footer = \
     "   </div>\n" \
     "</div>\n"
 
-headerdirs = ./src .
+headerdirs = ./algo .
 
-sourcedirs = ./src .
+sourcedirs = ./algo .
 
 outputdir = doc

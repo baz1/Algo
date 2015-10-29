@@ -9,7 +9,7 @@
 #include <cstring>
 
 /*!
-    \headerfile <algo/strop>
+    \headerfile <algo/strop.h>
     \inmodule Algo
     \ingroup Algo
 
@@ -18,7 +18,7 @@
 */
 
 /*!
-    \relates <algo/strop>
+    \relates <algo/strop.h>
     Splits a string.
 
     Splits the string \a haystack with the separator \a needle, and returns the result as a string
@@ -43,7 +43,7 @@ std::vector<std::string> split(const std::string haystack, const char needle, in
 }
 
 /*!
-    \relates <algo/strop>
+    \relates <algo/strop.h>
     Splits a string.
 
     Splits the string \a haystack with the separator \a needle, and returns the result as a string
@@ -68,7 +68,7 @@ std::vector<std::string> split(const std::string haystack, const std::string nee
 }
 
 /*!
-    \relates <algo/strop>
+    \relates <algo/strop.h>
     Returns \c true if \a main_str starts with \a beginning, \c false otherwise.
 
     \note This function is linear in the length of beginning.
