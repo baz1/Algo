@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2015, Rémi Bazin <bazin.remi@gmail.com>
+ * All rights reserved.
+ * See LICENSE for licensing details.
+ */
+
 #include "strop.h"
 
 /*!
@@ -16,6 +22,8 @@
     Splits the string \a haystack with the separator \a needle, and returns the result as a string
     vector which members may be empty. If \a min_capacity is non-zero,
     it will be used as the initial capacity for the resulting vector.
+
+    \note This function is linear in the length of haystack.
 */
 std::vector<std::string> split(const std::string &haystack, const char needle, int min_capacity)
 {
@@ -39,6 +47,8 @@ std::vector<std::string> split(const std::string &haystack, const char needle, i
     Splits the string \a haystack with the separator \a needle, and returns the result as a string
     vector which members may be empty. If \a min_capacity is non-zero,
     it will be used as the initial capacity for the resulting vector.
+
+    \note This function operates at most in O(nm) where m and n are the length of haystack and needle.
 */
 std::vector<std::string> split(const std::string &haystack, const std::string &needle, int min_capacity)
 {
