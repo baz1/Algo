@@ -7,7 +7,7 @@
 /*!
     \class dijkstra_neighbor
     \inmodule Algo
-    \ingroup Dijkstra
+    \ingroup dijkstra
 
     \brief Neighbor of a vertex.
 

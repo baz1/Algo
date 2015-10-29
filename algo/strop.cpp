@@ -13,7 +13,7 @@
     \inmodule Algo
     \ingroup Algo
 
-    \title String operations
+    \title strop
     \brief String operations
 
     This file provides string operations to complete the <string> library.

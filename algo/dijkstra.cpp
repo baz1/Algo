@@ -11,9 +11,9 @@
 /*!
     \headerfile <algo/dijkstra.h>
     \inmodule Algo
-    \ingroup Dijkstra
+    \ingroup dijkstra
 
-    \title Dijkstra's shortest path algorithm
+    \title dijkstra
     \brief Dijkstra's shortest path algorithm
 
     This file provides a modular way to use Dijkstra's shortest path algorithm.

@@ -2,8 +2,8 @@
 <!DOCTYPE QDOCINDEX>
 <INDEX url="" title="Various algorithmic tools" version="" project="Algo">
     <namespace threadsafety="unspecified" name="" status="commendable" access="public" module="Algo">
-        <page name="&lt;algo.h&gt;" href="algo-h.html" status="commendable" location="algo.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo.qdoc" lineno="7" subtype="header" title="Includes all the Algo library" fulltitle="&lt;algo.h&gt; - Includes all the Algo library" subtitle="" module="Algo" groups="Algo" brief="Includes all the Algo library"/>
-        <page name="&lt;algo/dijkstra.h&gt;" href="algo-dijkstra-h.html" status="commendable" location="dijkstra.cpp" filepath="/home/baz1/Qt/codecon/Algo/algo/dijkstra.cpp" lineno="11" subtype="header" title="Dijkstra's shortest path algorithm" fulltitle="&lt;algo/dijkstra.h&gt; - Dijkstra's shortest path algorithm" subtitle="" module="Algo" groups="Dijkstra" brief="Dijkstra's shortest path algorithm"/>
+        <page name="&lt;algo.h&gt;" href="algo-h.html" status="commendable" location="algo.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo.qdoc" lineno="7" subtype="header" title="algo" fulltitle="&lt;algo.h&gt; - algo" subtitle="" module="Algo" groups="Algo" brief="Includes all the Algo library"/>
+        <page name="&lt;algo/dijkstra.h&gt;" href="algo-dijkstra-h.html" status="commendable" location="dijkstra.cpp" filepath="/home/baz1/Qt/codecon/Algo/algo/dijkstra.cpp" lineno="11" subtype="header" title="dijkstra" fulltitle="&lt;algo/dijkstra.h&gt; - dijkstra" subtitle="" module="Algo" groups="dijkstra" brief="Dijkstra's shortest path algorithm"/>
         <function threadsafety="unspecified" name="dijkstra" href="algo-dijkstra-h.html#dijkstra" status="commendable" access="public" location="dijkstra.h" filepath="/home/baz1/Qt/codecon/Algo/algo/dijkstra.h" lineno="16" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/dijkstra.h&gt;" type="void" signature="void dijkstra(const std::vector&lt;std::vector&lt;dijkstra_neighbor&lt;WeightType&gt; &gt; &gt; &amp;adjacency_list, int source, std::vector&lt;WeightType&gt; &amp;min_distance, std::vector&lt;int&gt; &amp;previous, WeightType infinite_weight, int hashtable_init_capacity)">
             <parameter left="const std::vector&lt;std::vector&lt;dijkstra_neighbor&lt;WeightType&gt; &gt; &gt; &amp;" right="" name="adjacency_list" default=""/>
             <parameter left="int" right="" name="source" default=""/>
@@ -17,7 +17,7 @@
             <parameter left="int" right="" name="source" default=""/>
             <parameter left="int" right="" name="destination" default=""/>
         </function>
-        <class threadsafety="unspecified" name="dijkstra_neighbor" href="dijkstra-neighbor.html" status="commendable" access="public" location="dijkstra_neighbor.h" filepath="/home/baz1/Qt/codecon/Algo/algo/dijkstra_neighbor.h" lineno="11" module="Algo" groups="Dijkstra" brief="Neighbor of a vertex">
+        <class threadsafety="unspecified" name="dijkstra_neighbor" href="dijkstra-neighbor.html" status="commendable" access="public" location="dijkstra_neighbor.h" filepath="/home/baz1/Qt/codecon/Algo/algo/dijkstra_neighbor.h" lineno="11" module="Algo" groups="dijkstra" brief="Neighbor of a vertex">
             <function threadsafety="unspecified" name="dijkstra_neighbor" fullname="dijkstra_neighbor::dijkstra_neighbor" href="dijkstra-neighbor.html#dijkstra_neighbor" status="commendable" access="public" location="dijkstra_neighbor.h" filepath="/home/baz1/Qt/codecon/Algo/algo/dijkstra_neighbor.h" lineno="14" virtual="non" meta="constructor" const="false" static="false" overload="false" type="" signature="dijkstra_neighbor(int target, WeightType weight)">
                 <parameter left="int" right="" name="target" default=""/>
                 <parameter left="WeightType" right="" name="weight" default=""/>
@@ -29,8 +29,8 @@
             <parameter left="const InputIterator" right="" name="main_lst" default=""/>
             <parameter left="const InputIterator" right="" name="beginning" default=""/>
         </function>
-        <page name="&lt;algo/iterop.h&gt;" href="algo-iterop-h.html" status="commendable" location="iterop.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo/iterop.qdoc" lineno="7" subtype="header" title="Iterable operations" fulltitle="&lt;algo/iterop.h&gt; - Iterable operations" subtitle="" module="Algo" groups="Algo" brief="Iterable operations"/>
-        <page name="&lt;algo/strop.h&gt;" href="algo-strop-h.html" status="commendable" location="strop.cpp" filepath="/home/baz1/Qt/codecon/Algo/algo/strop.cpp" lineno="11" subtype="header" title="String operations" fulltitle="&lt;algo/strop.h&gt; - String operations" subtitle="" module="Algo" groups="Algo" brief="String operations"/>
+        <page name="&lt;algo/iterop.h&gt;" href="algo-iterop-h.html" status="commendable" location="iterop.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo/iterop.qdoc" lineno="7" subtype="header" title="iterop" fulltitle="&lt;algo/iterop.h&gt; - iterop" subtitle="" module="Algo" groups="Algo" brief="Iterable operations"/>
+        <page name="&lt;algo/strop.h&gt;" href="algo-strop-h.html" status="commendable" location="strop.cpp" filepath="/home/baz1/Qt/codecon/Algo/algo/strop.cpp" lineno="11" subtype="header" title="strop" fulltitle="&lt;algo/strop.h&gt; - strop" subtitle="" module="Algo" groups="Algo" brief="String operations"/>
         <function threadsafety="unspecified" name="split" href="algo-strop-h.html#split" status="commendable" access="public" location="strop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/strop.h" lineno="13" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/strop.h&gt;" type="std::vector&lt;std::string&gt;" signature="std::vector&lt;std::string&gt; split(const std::string haystack, const char needle, int min_capacity)">
             <parameter left="const std::string" right="" name="haystack" default=""/>
             <parameter left="const char" right="" name="needle" default=""/>
@@ -45,12 +45,12 @@
             <parameter left="const std::string" right="" name="main_str" default=""/>
             <parameter left="const std::string" right="" name="beginning" default=""/>
         </function>
-        <group name="Algo" href="algo.html" status="commendable" location="Algo.qdoc" filepath="/home/baz1/Qt/codecon/Algo/Algo.qdoc" lineno="1" seen="true" title="Algo" module="Algo" members="&lt;algo.h&gt;,Dijkstra,&lt;algo/iterop.h&gt;,&lt;algo/strop.h&gt;">
+        <group name="Algo" href="algo.html" status="commendable" location="Algo.qdoc" filepath="/home/baz1/Qt/codecon/Algo/Algo.qdoc" lineno="1" seen="true" title="Algo" module="Algo" members="&lt;algo.h&gt;,dijkstra,&lt;algo/iterop.h&gt;,&lt;algo/strop.h&gt;">
             <target name="algo" title="Algo"/>
         </group>
-        <group name="Dijkstra" href="dijkstra.html" status="commendable" location="Dijkstra.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo/Dijkstra.qdoc" lineno="1" seen="true" title="Dijkstra" module="Algo" groups="Algo" members="&lt;algo/dijkstra.h&gt;,dijkstra_neighbor">
+        <group name="dijkstra" href="dijkstra.html" status="commendable" location="Dijkstra.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo/Dijkstra.qdoc" lineno="1" seen="true" title="Dijkstra" module="Algo" groups="Algo" members="&lt;algo/dijkstra.h&gt;,dijkstra_neighbor" brief="Dijkstra's algorithm">
             <target name="dijkstra" title="Dijkstra"/>
         </group>
-        <module name="Algo" href="algo-module.html" status="internal" seen="false" title="" members="&lt;algo.h&gt;,Dijkstra,&lt;algo/dijkstra.h&gt;,dijkstra_neighbor,&lt;algo/iterop.h&gt;,&lt;algo/strop.h&gt;"/>
+        <module name="Algo" href="algo-module.html" status="internal" seen="false" title="" members="&lt;algo.h&gt;,dijkstra,&lt;algo/dijkstra.h&gt;,dijkstra_neighbor,&lt;algo/iterop.h&gt;,&lt;algo/strop.h&gt;"/>
     </namespace>
 </INDEX>

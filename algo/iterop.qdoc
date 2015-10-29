@@ -9,7 +9,7 @@
     \inmodule Algo
     \ingroup Algo
 
-    \title Iterable operations
+    \title iterop
     \brief Iterable operations
 
     This file provides operations on iterables to complete the <algorithm> library.
