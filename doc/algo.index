@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QDOCINDEX>
+<INDEX url="" title="Various algorithmic tools" version="" project="Algo">
+    <namespace threadsafety="unspecified" name="" status="commendable" access="public" module="Algo">
+        <page name="&lt;algo/strop&gt;" href="algo-strop.html" status="commendable" location="strop.cpp" filepath="/home/baz1/Qt/codecon/Algo/src/strop.cpp" lineno="3" subtype="header" title="String operations" fulltitle="&lt;algo/strop&gt; - String operations" subtitle="" module="Algo" groups="Algo" brief="This file provides string operations to complete the &lt;string&gt; library"/>
+        <function threadsafety="unspecified" name="split" href="algo-strop.html#split" status="commendable" access="public" location="strop.h" filepath="/home/baz1/Qt/codecon/Algo/src/strop.h" lineno="13" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/strop&gt;" type="std::vector&lt;std::string&gt;" signature="std::vector&lt;std::string&gt; split(const std::string &amp;haystack, const char needle, int min_capacity)">
+            <parameter left="const std::string &amp;" right="" name="haystack" default=""/>
+            <parameter left="const char" right="" name="needle" default=""/>
+            <parameter left="int" right="" name="min_capacity" default="0"/>
+        </function>
+        <function threadsafety="unspecified" name="split" href="algo-strop.html#split-2" status="commendable" access="public" location="strop.h" filepath="/home/baz1/Qt/codecon/Algo/src/strop.h" lineno="14" virtual="non" meta="plain" const="false" static="false" overload="true" overload-number="2" relates="&lt;algo/strop&gt;" type="std::vector&lt;std::string&gt;" signature="std::vector&lt;std::string&gt; split(const std::string &amp;haystack, const std::string &amp;needle, int min_capacity)">
+            <parameter left="const std::string &amp;" right="" name="haystack" default=""/>
+            <parameter left="const std::string &amp;" right="" name="needle" default=""/>
+            <parameter left="int" right="" name="min_capacity" default="0"/>
+        </function>
+        <group name="Algo" href="algo.html" status="commendable" location="algo.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo.qdoc" lineno="1" seen="true" title="Algo" module="Algo" members="&lt;algo/strop&gt;">
+            <target name="algo" title="Algo"/>
+        </group>
+        <module name="Algo" href="algo-module.html" status="internal" seen="false" title="" members="&lt;algo/strop&gt;"/>
+    </namespace>
+</INDEX>
