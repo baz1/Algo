@@ -31,7 +31,7 @@
 <a name="Functions"></a>
 <h2 id="Functions">Functions</h2>
 <div class="table"><table class="alignedsummary">
-<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="algo-dijkstra-h.html#dijkstra">dijkstra</a></b>(const std::vector&lt;std::vector&lt;dijkstra_neighbor&lt;WeightType&gt; &gt; &gt; &amp;<i> adjacency_list</i>, int<i> source</i>, std::vector&lt;WeightType&gt; &amp;<i> min_distance</i>, std::vector&lt;int&gt; &amp;<i> previous</i>, WeightType<i> infinite_weight</i>, int<i> hashtable_init_capacity</i> = 1024)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="algo-dijkstra-h.html#dijkstra">dijkstra</a></b>(const std::vector&lt;std::vector&lt;dijkstra_neighbor&lt;WeightType&gt; &gt; &gt; &amp;<i> adjacency_list</i>, int<i> source</i>, std::vector&lt;WeightType&gt; &amp;<i> min_distance</i>, std::vector&lt;int&gt; &amp;<i> previous</i>, WeightType<i> infinite_weight</i>, int<i> hashtable_init_capacity</i> = 256)</td></tr>
 <tr><td class="memItemLeft topAlign rightAlign"> std::vector&lt;int&gt; </td><td class="memItemRight bottomAlign"><b><a href="algo-dijkstra-h.html#dijkstra_path">dijkstra_path</a></b>(const std::vector&lt;int&gt; &amp;<i> previous</i>, int<i> source</i>, int<i> destination</i>)</td></tr>
 </table></div>
 <!-- $$$<algo/dijkstra.h>-description -->
@@ -41,7 +41,7 @@
 <!-- @@@<algo/dijkstra.h> -->
 <h2>Function Documentation</h2>
 <!-- $$$dijkstra[overload1]$$$dijkstraconststd::vector<std::vector<dijkstra_neighbor<WeightType>>>&intstd::vector<WeightType>&std::vector<int>&WeightTypeint -->
-<h3 class="fn" id="dijkstra"><a name="dijkstra"></a><span class="type">void</span> <span class="name">dijkstra</span>(const <span class="type">std::vector</span>&lt;<span class="type">std::vector</span>&lt;<span class="type"><a href="dijkstra-neighbor.html">dijkstra_neighbor</a></span>&lt;<span class="type">WeightType</span>&gt; &gt; &gt; &amp;<i> adjacency_list</i>, <span class="type">int</span><i> source</i>, <span class="type">std::vector</span>&lt;<span class="type">WeightType</span>&gt; &amp;<i> min_distance</i>, <span class="type">std::vector</span>&lt;<span class="type">int</span>&gt; &amp;<i> previous</i>, <span class="type">WeightType</span><i> infinite_weight</i>, <span class="type">int</span><i> hashtable_init_capacity</i> = 1024)</h3>
+<h3 class="fn" id="dijkstra"><a name="dijkstra"></a><span class="type">void</span> <span class="name">dijkstra</span>(const <span class="type">std::vector</span>&lt;<span class="type">std::vector</span>&lt;<span class="type"><a href="dijkstra-neighbor.html">dijkstra_neighbor</a></span>&lt;<span class="type">WeightType</span>&gt; &gt; &gt; &amp;<i> adjacency_list</i>, <span class="type">int</span><i> source</i>, <span class="type">std::vector</span>&lt;<span class="type">WeightType</span>&gt; &amp;<i> min_distance</i>, <span class="type">std::vector</span>&lt;<span class="type">int</span>&gt; &amp;<i> previous</i>, <span class="type">WeightType</span><i> infinite_weight</i>, <span class="type">int</span><i> hashtable_init_capacity</i> = 256)</h3>
 <p>Computes the Dijkstra's algorithm in order to retrieve the minimum distances <i>min_distance</i> and the predecessors <i>previous</i> corresponding to the shortest paths starting at the vertex <i>source</i>.</p>
 <p>Vertices are labelled with integers whereas weights can have any type, as long as they implement the &lt; operator, and conversion from int (0).</p>
 <p><i>adjacency_list</i> defines the structure of the graph.</p>
@@ -54,6 +54,7 @@
 <p>Extracts a specific shortest path in the graph.</p>
 <p>Extracts a path from the <i>source</i> vertex to some <i>destination</i> vertex, using the previously-computed vector value <i>previous</i>. Returns a vector of vertex identifiers, starting with <i>source</i> and ending with <i>destination</i> and corresponding to the shortest path according to <i>previous</i>.</p>
 <p><b>Warning:</b> For efficiency reasons, there is no check whether or not destination is reachable. to avoid any infinite loop behavior, please check beforehand that the <code>min_distance</code> value corresponding to <i>destination</i> is not infinite.</p>
+<p><b>See also </b><a href="algo-dijkstra-h.html#dijkstra">dijkstra</a>().</p>
 <!-- @@@dijkstra_path -->
         </div>
        </div>

@@ -15,7 +15,7 @@
 template <typename WeightType>
 void dijkstra(const std::vector< std::vector< dijkstra_neighbor<WeightType> > > &adjacency_list,
               int source, std::vector<WeightType> &min_distance, std::vector<int> &previous,
-              WeightType infinite_weight, int hashtable_init_capacity = 1024)
+              WeightType infinite_weight, int hashtable_init_capacity = 256)
 {
     int N = adjacency_list.size();
     min_distance.clear();

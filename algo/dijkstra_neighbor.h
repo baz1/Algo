@@ -4,8 +4,8 @@
  * See LICENSE for licensing details.
  */
 
-#ifndef DIJKSTRA_NEIGHBOR_H
-#define DIJKSTRA_NEIGHBOR_H
+#ifndef ALGO_DIJKSTRA_NEIGHBOR_H
+#define ALGO_DIJKSTRA_NEIGHBOR_H
 
 template <typename WeightType> struct dijkstra_neighbor
 {
@@ -14,4 +14,4 @@ template <typename WeightType> struct dijkstra_neighbor
     inline dijkstra_neighbor(int target, WeightType weight) : target(target), weight(weight) {}
 };
 
-#endif // DIJKSTRA_NEIGHBOR_H
+#endif // ALGO_DIJKSTRA_NEIGHBOR_H

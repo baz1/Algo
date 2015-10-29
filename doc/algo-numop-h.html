@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- numop.cpp -->
+  <title>&lt;algo/numop.h&gt; - numop | Algo </title>
+<link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+<li>&lt;algo/numop.h&gt; - numop</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="sidebar"><div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">&lt;algo/numop.h&gt; - numop</h1>
+<span class="subtitle"></span>
+<!-- $$$<algo/numop.h>-brief -->
+<p>Numeric operations <a href="#details">More...</a></p>
+<!-- @@@<algo/numop.h> -->
+<ul>
+</ul>
+<a name="Types"></a>
+<h2 id="Types">Types</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> typedef </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#ll-typedef">ll</a></b></td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> typedef </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#uint-typedef">uint</a></b></td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> typedef </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#ull-typedef">ull</a></b></td></tr>
+</table></div>
+<a name="Functions"></a>
+<h2 id="Functions">Functions</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> T </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#gcd">gcd</a></b>(T<i> a</i>, T<i> b</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> std::tuple&lt;T, T, T, T, T&gt; </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#gcdex2">gcdex2</a></b>(T<i> v1</i>, T<i> v2</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> std::tuple&lt;T, T, T&gt; </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#gcdex">gcdex</a></b>(T<i> v1</i>, T<i> v2</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> T </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#qAbs">qAbs</a></b>(const T &amp;<i> t</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> const T &amp; </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#qMax">qMax</a></b>(const T &amp;<i> a</i>, const T &amp;<i> b</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> const T &amp; </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#qMin">qMin</a></b>(const T &amp;<i> a</i>, const T &amp;<i> b</i>)</td></tr>
+</table></div>
+<!-- $$$<algo/numop.h>-description -->
+<div class="descr"> <a name="details"></a>
+<p>This file provides numeric operations to complete the &lt;numeric&gt; library.</p>
+</div>
+<!-- @@@<algo/numop.h> -->
+<h2>Type Documentation</h2>
+<!-- $$$ll -->
+<h3 class="fn" id="ll-typedef"><a name="ll-typedef"></a>typedef <span class="name">ll</span></h3>
+<p>Synonym for long long.</p>
+<!-- @@@ll -->
+<!-- $$$uint -->
+<h3 class="fn" id="uint-typedef"><a name="uint-typedef"></a>typedef <span class="name">uint</span></h3>
+<p>Synonym for unsigned int.</p>
+<!-- @@@uint -->
+<!-- $$$ull -->
+<h3 class="fn" id="ull-typedef"><a name="ull-typedef"></a>typedef <span class="name">ull</span></h3>
+<p>Synonym for unsigned long long.</p>
+<!-- @@@ull -->
+<h2>Function Documentation</h2>
+<!-- $$$gcd[overload1]$$$gcdTT -->
+<h3 class="fn" id="gcd"><a name="gcd"></a><span class="type">T</span> <span class="name">gcd</span>(<span class="type">T</span><i> a</i>, <span class="type">T</span><i> b</i>)</h3>
+<p>Returns the Greatest Common Divisor of <i>a</i> and <i>b</i>.</p>
+<!-- @@@gcd -->
+<!-- $$$gcdex2[overload1]$$$gcdex2TT -->
+<h3 class="fn" id="gcdex2"><a name="gcdex2"></a><span class="type">std::tuple</span>&lt;<span class="type">T</span>, <span class="type">T</span>, <span class="type">T</span>, <span class="type">T</span>, <span class="type">T</span>&gt; <span class="name">gcdex2</span>(<span class="type">T</span><i> v1</i>, <span class="type">T</span><i> v2</i>)</h3>
+<p>Computes the Greatest Common Divisor of <i>v1</i> and <i>v2</i> using the extended Euclidean algorithm.</p>
+<p>Returns the result as a tuple <code>(x1,x2,gcd,q1,q2)</code> where <code>gcd</code> is the greatest common divisor, and the other values are such that <code>((gcd == x1*v1 + x2*v2) &amp;&amp; (q1 == v1/gcd) &amp;&amp; (q2 == v2/gcd)</code>.</p>
+<p><b>Note: </b>This version does not bring anything new to <a href="algo-numop-h.html#gcdex">gcdex</a>() when used with usual integer types since <code>q1</code> and <code>q2</code> can be easily computed afterwards, but it may be useful when manipulating big integers because the division operation may be costly.</p><!-- @@@gcdex2 -->
+<!-- $$$gcdex[overload1]$$$gcdexTT -->
+<h3 class="fn" id="gcdex"><a name="gcdex"></a><span class="type">std::tuple</span>&lt;<span class="type">T</span>, <span class="type">T</span>, <span class="type">T</span>&gt; <span class="name">gcdex</span>(<span class="type">T</span><i> v1</i>, <span class="type">T</span><i> v2</i>)</h3>
+<p>Computes the Greatest Common Divisor of <i>v1</i> and <i>v2</i> using the extended Euclidean algorithm.</p>
+<p>Returns the result as a tuple <code>(x1,x2,gcd)</code> where <code>gcd</code> is the greatest common divisor, and <code>x1</code> and <code>x2</code> are such that <code>(gcd == x1*v1 + x2*v2)</code>.</p>
+<!-- @@@gcdex -->
+<!-- $$$qAbs[overload1]$$$qAbsconstT& -->
+<h3 class="fn" id="qAbs"><a name="qAbs"></a><span class="type">T</span> <span class="name">qAbs</span>(const <span class="type">T</span> &amp;<i> t</i>)</h3>
+<p>Returns the absolute value of the number <i>t</i>.</p>
+<p><b>Note: </b>The name has been chosen to be the same one as in the Qt library to ease the memorizing.</p><p><b>Note: </b>This method is using the comparison <code>(t &gt;= 0)</code>.</p><!-- @@@qAbs -->
+<!-- $$$qMax[overload1]$$$qMaxconstT&constT& -->
+<h3 class="fn" id="qMax"><a name="qMax"></a>const <span class="type">T</span> &amp; <span class="name">qMax</span>(const <span class="type">T</span> &amp;<i> a</i>, const <span class="type">T</span> &amp;<i> b</i>)</h3>
+<p>Returns the maximum between <i>a</i> and <i>b</i>.</p>
+<p><b>Note: </b>The name has been chosen to be the same one as in the Qt library to ease the memorizing.</p><p><b>Note: </b>This method is using the comparison operator &lt;.</p><!-- @@@qMax -->
+<!-- $$$qMin[overload1]$$$qMinconstT&constT& -->
+<h3 class="fn" id="qMin"><a name="qMin"></a>const <span class="type">T</span> &amp; <span class="name">qMin</span>(const <span class="type">T</span> &amp;<i> a</i>, const <span class="type">T</span> &amp;<i> b</i>)</h3>
+<p>Returns the minimum between <i>a</i> and <i>b</i>.</p>
+<p><b>Note: </b>The name has been chosen to be the same one as in the Qt library to ease the memorizing.</p><p><b>Note: </b>This method is using the comparison operator &lt;.</p><!-- @@@qMin -->
+        </div>
+       </div>
+   </div>
+   </div>
+</div>
+</body>
+</html>

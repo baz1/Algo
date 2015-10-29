@@ -10,7 +10,7 @@
             <parameter left="std::vector&lt;WeightType&gt; &amp;" right="" name="min_distance" default=""/>
             <parameter left="std::vector&lt;int&gt; &amp;" right="" name="previous" default=""/>
             <parameter left="WeightType" right="" name="infinite_weight" default=""/>
-            <parameter left="int" right="" name="hashtable_init_capacity" default="1024"/>
+            <parameter left="int" right="" name="hashtable_init_capacity" default="256"/>
         </function>
         <function threadsafety="unspecified" name="dijkstra_path" href="algo-dijkstra-h.html#dijkstra_path" status="commendable" access="public" location="dijkstra.h" filepath="/home/baz1/Qt/codecon/Algo/algo/dijkstra.h" lineno="50" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/dijkstra.h&gt;" type="std::vector&lt;int&gt;" signature="std::vector&lt;int&gt; dijkstra_path(const std::vector&lt;int&gt; &amp;previous, int source, int destination)">
             <parameter left="const std::vector&lt;int&gt; &amp;" right="" name="previous" default=""/>
@@ -30,6 +30,33 @@
             <parameter left="const InputIterator" right="" name="beginning" default=""/>
         </function>
         <page name="&lt;algo/iterop.h&gt;" href="algo-iterop-h.html" status="commendable" location="iterop.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo/iterop.qdoc" lineno="7" subtype="header" title="iterop" fulltitle="&lt;algo/iterop.h&gt; - iterop" subtitle="" module="Algo" groups="Algo" brief="Iterable operations"/>
+        <page name="&lt;algo/numop.h&gt;" href="algo-numop-h.html" status="commendable" location="numop.cpp" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.cpp" lineno="9" subtype="header" title="numop" fulltitle="&lt;algo/numop.h&gt; - numop" subtitle="" module="Algo" groups="Algo" brief="Numeric operations"/>
+        <typedef threadsafety="unspecified" name="ll" href="algo-numop-h.html#ll-typedef" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="15"/>
+        <typedef threadsafety="unspecified" name="uint" href="algo-numop-h.html#uint-typedef" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="14"/>
+        <typedef threadsafety="unspecified" name="ull" href="algo-numop-h.html#ull-typedef" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="23"/>
+        <function threadsafety="unspecified" name="gcd" href="algo-numop-h.html#gcd" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="31" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/numop.h&gt;" type="T" signature="T gcd(T a, T b)">
+            <parameter left="T" right="" name="a" default=""/>
+            <parameter left="T" right="" name="b" default=""/>
+        </function>
+        <function threadsafety="unspecified" name="gcdex" href="algo-numop-h.html#gcdex" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="49" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/numop.h&gt;" type="std::tuple&lt;T, T, T&gt;" signature="std::tuple&lt;T, T, T&gt; gcdex(T v1, T v2)">
+            <parameter left="T" right="" name="v1" default=""/>
+            <parameter left="T" right="" name="v2" default=""/>
+        </function>
+        <function threadsafety="unspecified" name="gcdex2" href="algo-numop-h.html#gcdex2" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="82" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/numop.h&gt;" type="std::tuple&lt;T, T, T, T, T&gt;" signature="std::tuple&lt;T, T, T, T, T&gt; gcdex2(T v1, T v2)">
+            <parameter left="T" right="" name="v1" default=""/>
+            <parameter left="T" right="" name="v2" default=""/>
+        </function>
+        <function threadsafety="unspecified" name="qAbs" href="algo-numop-h.html#qAbs" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="23" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/numop.h&gt;" type="T" signature="T qAbs(const T &amp;t)">
+            <parameter left="const T &amp;" right="" name="t" default=""/>
+        </function>
+        <function threadsafety="unspecified" name="qMax" href="algo-numop-h.html#qMax" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="25" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/numop.h&gt;" type="const T &amp;" signature="const T &amp; qMax(const T &amp;a, const T &amp;b)">
+            <parameter left="const T &amp;" right="" name="a" default=""/>
+            <parameter left="const T &amp;" right="" name="b" default=""/>
+        </function>
+        <function threadsafety="unspecified" name="qMin" href="algo-numop-h.html#qMin" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="24" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/numop.h&gt;" type="const T &amp;" signature="const T &amp; qMin(const T &amp;a, const T &amp;b)">
+            <parameter left="const T &amp;" right="" name="a" default=""/>
+            <parameter left="const T &amp;" right="" name="b" default=""/>
+        </function>
         <page name="&lt;algo/strop.h&gt;" href="algo-strop-h.html" status="commendable" location="strop.cpp" filepath="/home/baz1/Qt/codecon/Algo/algo/strop.cpp" lineno="11" subtype="header" title="strop" fulltitle="&lt;algo/strop.h&gt; - strop" subtitle="" module="Algo" groups="Algo" brief="String operations"/>
         <function threadsafety="unspecified" name="split" href="algo-strop-h.html#split" status="commendable" access="public" location="strop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/strop.h" lineno="13" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/strop.h&gt;" type="std::vector&lt;std::string&gt;" signature="std::vector&lt;std::string&gt; split(const std::string haystack, const char needle, int min_capacity)">
             <parameter left="const std::string" right="" name="haystack" default=""/>
@@ -45,12 +72,12 @@
             <parameter left="const std::string" right="" name="main_str" default=""/>
             <parameter left="const std::string" right="" name="beginning" default=""/>
         </function>
-        <group name="Algo" href="algo.html" status="commendable" location="Algo.qdoc" filepath="/home/baz1/Qt/codecon/Algo/Algo.qdoc" lineno="1" seen="true" title="Algo" module="Algo" members="&lt;algo.h&gt;,dijkstra,&lt;algo/iterop.h&gt;,&lt;algo/strop.h&gt;">
+        <group name="Algo" href="algo.html" status="commendable" location="Algo.qdoc" filepath="/home/baz1/Qt/codecon/Algo/Algo.qdoc" lineno="1" seen="true" title="Algo" module="Algo" members="&lt;algo.h&gt;,dijkstra,&lt;algo/iterop.h&gt;,&lt;algo/numop.h&gt;,&lt;algo/strop.h&gt;">
             <target name="algo" title="Algo"/>
         </group>
         <group name="dijkstra" href="dijkstra.html" status="commendable" location="Dijkstra.qdoc" filepath="/home/baz1/Qt/codecon/Algo/algo/Dijkstra.qdoc" lineno="1" seen="true" title="Dijkstra" module="Algo" groups="Algo" members="&lt;algo/dijkstra.h&gt;,dijkstra_neighbor" brief="Dijkstra's algorithm">
             <target name="dijkstra" title="Dijkstra"/>
         </group>
-        <module name="Algo" href="algo-module.html" status="internal" seen="false" title="" members="&lt;algo.h&gt;,dijkstra,&lt;algo/dijkstra.h&gt;,dijkstra_neighbor,&lt;algo/iterop.h&gt;,&lt;algo/strop.h&gt;"/>
+        <module name="Algo" href="algo-module.html" status="internal" seen="false" title="" members="&lt;algo.h&gt;,dijkstra,&lt;algo/dijkstra.h&gt;,dijkstra_neighbor,&lt;algo/iterop.h&gt;,&lt;algo/numop.h&gt;,&lt;algo/strop.h&gt;"/>
     </namespace>
 </INDEX>

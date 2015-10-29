@@ -56,7 +56,7 @@
     to avoid any infinite loop behavior, please check beforehand that the \c min_distance value
     corresponding to \a destination is not infinite.
 
-    \sa
+    \sa dijkstra()
 */
 std::vector<int> dijkstra_path(const std::vector<int> &previous, int source, int destination)
 {
