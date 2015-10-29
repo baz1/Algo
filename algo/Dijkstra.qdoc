@@ -1,0 +1,9 @@
+/*!
+    \group Dijkstra
+    \inmodule Algo
+    \ingroup Algo
+    \title Dijkstra
+    \target Dijkstra
+
+    Dijkstra's algorithm
+*/

@@ -11,7 +11,7 @@
 /*!
     \headerfile <algo/dijkstra.h>
     \inmodule Algo
-    \ingroup Algo
+    \ingroup Dijkstra
 
     \title Dijkstra's shortest path algorithm
     \brief Dijkstra's shortest path algorithm
@@ -26,12 +26,16 @@
     \relates <algo/dijkstra.h>
     Computes the Dijkstra's algorithm in order to retrieve the minimum distances \a min_distance
     and the predecessors \a previous corresponding to the shortest paths starting at the vertex \a source.
+
     Vertices are labelled with integers whereas weights can have any type,
     as long as they implement the < operator, and conversion from int (0).
+
     \a adjacency_list defines the structure of the graph.
+
     \a infinite_weight shall be set to the maximum value reachable with the type \c WeightType.
     In case \c WeightType is a basic type, std::numeric_limits<WeightType>::infinity() or
     std::numeric_limits<WeightType>::max() should be used, when available.
+
     Finally, \a hashtable_init_capacity may be specified as a optimizing factor when the size of the
     problem is known: it is the size given to the vertex hashmap during the initialization.
 
