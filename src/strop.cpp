@@ -75,7 +75,7 @@ std::vector<std::string> split(const std::string haystack, const std::string nee
 
     \note This function is only a specialized version of the starts_with on iterable classes.
 
-    \sa template <class InputIterator> bool starts_with(const InputIterator main_lst, const InputIterator beginning)
+    \sa starts_with()
 */
 bool starts_with(const std::string main_str, const std::string beginning)
 {

@@ -3,7 +3,7 @@
 <INDEX url="" title="Various algorithmic tools" version="" project="Algo">
     <namespace threadsafety="unspecified" name="" status="commendable" access="public" module="Algo">
         <page name="&lt;algo/iterop&gt;" href="algo-iterop.html" status="commendable" location="iterop.cpp" filepath="/home/baz1/Qt/codecon/Algo/src/iterop.cpp" lineno="9" subtype="header" title="Iterable operations" fulltitle="&lt;algo/iterop&gt; - Iterable operations" subtitle="" module="Algo" groups="Algo" brief="This file provides operations on iterables to complete the &lt;algorithm&gt; library"/>
-        <function threadsafety="unspecified" name="starts_with" status="internal" access="private" location="iterop.cpp" filepath="/home/baz1/Qt/codecon/Algo/src/iterop.cpp" lineno="24" virtual="non" meta="plain" const="false" static="false" overload="true" overload-number="2" type="bool" signature="bool starts_with(const InputIterator main_lst, const InputIterator beginning)">
+        <function threadsafety="unspecified" name="starts_with" href="algo-iterop.html#starts_with" status="commendable" access="public" location="iterop.h" filepath="/home/baz1/Qt/codecon/Algo/src/iterop.h" lineno="10" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/iterop&gt;" type="bool" signature="bool starts_with(const InputIterator main_lst, const InputIterator beginning)">
             <parameter left="const InputIterator" right="" name="main_lst" default=""/>
             <parameter left="const InputIterator" right="" name="beginning" default=""/>
         </function>
@@ -18,7 +18,7 @@
             <parameter left="const std::string" right="" name="needle" default=""/>
             <parameter left="int" right="" name="min_capacity" default="0"/>
         </function>
-        <function threadsafety="unspecified" name="starts_with" href="algo-strop.html#starts_with" status="commendable" access="public" location="strop.h" filepath="/home/baz1/Qt/codecon/Algo/src/strop.h" lineno="16" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/strop&gt;" type="bool" signature="bool starts_with(const std::string main_str, const std::string beginning)">
+        <function threadsafety="unspecified" name="starts_with" href="algo-strop.html#starts_with-2" status="commendable" access="public" location="strop.h" filepath="/home/baz1/Qt/codecon/Algo/src/strop.h" lineno="16" virtual="non" meta="plain" const="false" static="false" overload="true" overload-number="2" relates="&lt;algo/strop&gt;" type="bool" signature="bool starts_with(const std::string main_str, const std::string beginning)">
             <parameter left="const std::string" right="" name="main_str" default=""/>
             <parameter left="const std::string" right="" name="beginning" default=""/>
         </function>
