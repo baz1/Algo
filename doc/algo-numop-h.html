@@ -44,10 +44,11 @@
 <tr><td class="memItemLeft topAlign rightAlign"> T </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#qAbs">qAbs</a></b>(const T &amp;<i> t</i>)</td></tr>
 <tr><td class="memItemLeft topAlign rightAlign"> const T &amp; </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#qMax">qMax</a></b>(const T &amp;<i> a</i>, const T &amp;<i> b</i>)</td></tr>
 <tr><td class="memItemLeft topAlign rightAlign"> const T &amp; </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#qMin">qMin</a></b>(const T &amp;<i> a</i>, const T &amp;<i> b</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> T </td><td class="memItemRight bottomAlign"><b><a href="algo-numop-h.html#tpow">tpow</a></b>(const T<i> a</i>, int<i> p</i>)</td></tr>
 </table></div>
 <!-- $$$<algo/numop.h>-description -->
 <div class="descr"> <a name="details"></a>
-<p>This file provides numeric operations to complete the &lt;numeric&gt; library.</p>
+<p>This file provides numeric operations to complete the &lt;cmath&gt; library.</p>
 </div>
 <!-- @@@<algo/numop.h> -->
 <h2>Type Documentation</h2>
@@ -90,6 +91,10 @@
 <h3 class="fn" id="qMin"><a name="qMin"></a>const <span class="type">T</span> &amp; <span class="name">qMin</span>(const <span class="type">T</span> &amp;<i> a</i>, const <span class="type">T</span> &amp;<i> b</i>)</h3>
 <p>Returns the minimum between <i>a</i> and <i>b</i>.</p>
 <p><b>Note: </b>The name has been chosen to be the same one as in the Qt library to ease the memorizing.</p><p><b>Note: </b>This method is using the comparison operator &lt;.</p><!-- @@@qMin -->
+<!-- $$$tpow[overload1]$$$tpowconstTint -->
+<h3 class="fn" id="tpow"><a name="tpow"></a><span class="type">T</span> <span class="name">tpow</span>(const <span class="type">T</span><i> a</i>, <span class="type">int</span><i> p</i>)</h3>
+<p>Returns the value of <i>a</i> to the power <i>p</i>.</p>
+<p><b>Note: </b>This function uses the square exponentiation method.</p><!-- @@@tpow -->
         </div>
        </div>
    </div>

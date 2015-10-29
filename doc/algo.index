@@ -57,6 +57,10 @@
             <parameter left="const T &amp;" right="" name="a" default=""/>
             <parameter left="const T &amp;" right="" name="b" default=""/>
         </function>
+        <function threadsafety="unspecified" name="tpow" href="algo-numop-h.html#tpow" status="commendable" access="public" location="numop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/numop.h" lineno="106" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/numop.h&gt;" type="T" signature="T tpow(const T a, int p)">
+            <parameter left="const T" right="" name="a" default=""/>
+            <parameter left="int" right="" name="p" default=""/>
+        </function>
         <page name="&lt;algo/strop.h&gt;" href="algo-strop-h.html" status="commendable" location="strop.cpp" filepath="/home/baz1/Qt/codecon/Algo/algo/strop.cpp" lineno="11" subtype="header" title="strop" fulltitle="&lt;algo/strop.h&gt; - strop" subtitle="" module="Algo" groups="Algo" brief="String operations"/>
         <function threadsafety="unspecified" name="split" href="algo-strop-h.html#split" status="commendable" access="public" location="strop.h" filepath="/home/baz1/Qt/codecon/Algo/algo/strop.h" lineno="13" virtual="non" meta="plain" const="false" static="false" overload="false" relates="&lt;algo/strop.h&gt;" type="std::vector&lt;std::string&gt;" signature="std::vector&lt;std::string&gt; split(const std::string haystack, const char needle, int min_capacity)">
             <parameter left="const std::string" right="" name="haystack" default=""/>

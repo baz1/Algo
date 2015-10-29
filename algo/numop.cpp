@@ -99,7 +99,7 @@
 /*!
     \fn T tpow(const T a, int p)
     \relates <algo/numop.h>
-    Returns the value of \a a to the power \a b.
+    Returns the value of \a a to the power \a p.
 
     \note This function uses the square exponentiation method.
 */
