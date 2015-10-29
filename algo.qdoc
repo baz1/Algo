@@ -9,7 +9,9 @@
     \inmodule Algo
     \ingroup Algo
 
-    \title Includes all the Algo library.
-    \brief This file includes all the content of this library.
+    \title Includes all the Algo library
+    \brief Includes all the Algo library
+
+    This file includes all the content of this library.
 */
 

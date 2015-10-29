@@ -9,5 +9,6 @@
 
 #include "algo/strop.h"
 #include "algo/iterop.h"
+#include "algo/dijkstra.h"
 
 #endif // ALGO_H

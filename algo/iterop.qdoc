@@ -10,7 +10,9 @@
     \ingroup Algo
 
     \title Iterable operations
-    \brief This file provides operations on iterables to complete the <algorithm> library.
+    \brief Iterable operations
+
+    This file provides operations on iterables to complete the <algorithm> library.
 */
 
 /*!

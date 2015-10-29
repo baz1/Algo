@@ -14,7 +14,9 @@
     \ingroup Algo
 
     \title String operations
-    \brief This file provides string operations to complete the <string> library.
+    \brief String operations
+
+    This file provides string operations to complete the <string> library.
 */
 
 /*!

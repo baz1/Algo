@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- dijkstra_neighbor.qdoc -->
+  <title>dijkstra_neighbor Class | Algo </title>
+<link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+<li>dijkstra_neighbor</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-variables">Public Variables</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">dijkstra_neighbor Class</h1>
+<!-- $$$dijkstra_neighbor-brief -->
+<p>Neighbor of a vertex. <a href="#details">More...</a></p>
+<!-- @@@dijkstra_neighbor -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> <span class="preprocessor">#include &lt;dijkstra_neighbor&gt;</span>
+</td></tr></table></div><ul>
+<li><a href="dijkstra-neighbor-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-functions"></a>
+<h2 id="public-functions">Public Functions</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="algo-dijkstra-h.html#dijkstra_neighbor">dijkstra_neighbor</a></b>(int<i> target</i>, WeightType<i> weight</i>)</td></tr>
+</table></div>
+<a name="public-variables"></a>
+<h2 id="public-variables">Public Variables</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="algo-dijkstra-h.html#target-var">target</a></b></td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> WeightType </td><td class="memItemRight bottomAlign"><b><a href="algo-dijkstra-h.html#weight-var">weight</a></b></td></tr>
+</table></div>
+<a name="details"></a>
+<!-- $$$dijkstra_neighbor-description -->
+<div class="descr">
+<h2 id="details">Detailed Description</h2>
+<p>Neighbor of a vertex.</p>
+<p>This class is to be used alongside the <code>dijkstra</code> procedure, and defines the neighbor of a vertex.</p>
+</div>
+<p><b>See also </b><a href="algo-dijkstra-h.html">&lt;algo/dijkstra.h&gt;</a>.</p>
+<!-- @@@dijkstra_neighbor -->
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$dijkstra_neighbor[overload1]$$$dijkstra_neighborintWeightType -->
+<h3 class="fn" id="dijkstra_neighbor"><a name="dijkstra_neighbor"></a>dijkstra_neighbor::<span class="name">dijkstra_neighbor</span>(<span class="type">int</span><i> target</i>, <span class="type">WeightType</span><i> weight</i>)</h3>
+<p>Constructs a neighbor element.</p>
+<p>Its neighbor identifier shall be <i>target</i> whereas the cost of the connection is <i>weight</i>.</p>
+<!-- @@@dijkstra_neighbor -->
+</div>
+<div class="vars">
+<h2>Member Variable Documentation</h2>
+<!-- $$$target -->
+<h3 class="fn" id="target-var"><a name="target-var"></a><span class="type">int</span> dijkstra_neighbor::<span class="name">target</span></h3>
+<p>The target vertex.</p>
+<p>This integer defines the identity of the neighbor at the end of the connection.</p>
+<!-- @@@target -->
+<!-- $$$weight -->
+<h3 class="fn" id="weight-var"><a name="weight-var"></a><span class="type">WeightType</span> dijkstra_neighbor::<span class="name">weight</span></h3>
+<p>The weight of the connection.</p>
+<p>This weight measures the cost of the connection used when searching the shortest path in Dijkstra's algorithm.</p>
+<!-- @@@weight -->
+</div>
+        </div>
+       </div>
+   </div>
+   </div>
+</div>
+</body>
+</html>

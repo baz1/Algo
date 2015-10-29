@@ -1,0 +1,44 @@
+/*
+ * Copyright (c) 2015, Rémi Bazin <bazin.remi@gmail.com>
+ * All rights reserved.
+ * See LICENSE for licensing details.
+ */
+
+/*!
+    \class dijkstra_neighbor
+    \inmodule Algo
+    \ingroup Algo
+
+    \brief Neighbor of a vertex.
+
+    This class is to be used alongside the \c dijkstra procedure,
+    and defines the neighbor of a vertex.
+
+    \sa <algo/dijkstra.h>
+*/
+
+/*!
+    \variable dijkstra_neighbor::target
+    \relates <algo/dijkstra.h>
+    The target vertex.
+
+    This integer defines the identity of the neighbor at the end of the connection.
+*/
+
+/*!
+    \variable dijkstra_neighbor::weight
+    \relates <algo/dijkstra.h>
+    The weight of the connection.
+
+
+    This weight measures the cost of the connection used when searching the shortest path
+    in Dijkstra's algorithm.
+*/
+
+/*!
+    \fn dijkstra_neighbor::dijkstra_neighbor(int target, WeightType weight)
+    \relates <algo/dijkstra.h>
+    Constructs a neighbor element.
+
+    Its neighbor identifier shall be \a target whereas the cost of the connection is \a weight.
+*/
