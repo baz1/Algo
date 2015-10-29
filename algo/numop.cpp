@@ -14,7 +14,7 @@
     \title numop
     \brief Numeric operations
 
-    This file provides numeric operations to complete the <numeric> library.
+    This file provides numeric operations to complete the <cmath> library.
 */
 
 /*!
@@ -94,4 +94,12 @@
     \note This version does not bring anything new to \l gcdex() when used with usual integer types
     since \c q1 and \c q2 can be easily computed afterwards, but it may be useful when manipulating
     big integers because the division operation may be costly.
+*/
+
+/*!
+    \fn T tpow(const T a, int p)
+    \relates <algo/numop.h>
+    Returns the value of \a a to the power \a b.
+
+    \note This function uses the square exponentiation method.
 */

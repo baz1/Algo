@@ -103,4 +103,28 @@ invcase:
     }
 }
 
+template <typename T> T tpow(const T a, int p)
+{
+    if (p <= 0)
+    {
+        if (p == 0)
+            return 1;
+        a = 1 / a;
+        p = -p;
+    }
+    int c = 2;
+    while (c <= p)
+        c <<= 1;
+    c >>= 2;
+    T result = a;
+    while (c)
+    {
+        result *= result;
+        if (c & p)
+            result *= a;
+        c >>= 1;
+    }
+    return result;
+}
+
 #endif // ALGO_NUMOP_H
