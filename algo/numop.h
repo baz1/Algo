@@ -33,10 +33,10 @@ template <typename T> T gcd(T a, T b)
     while (true)
     {
         if (a == 0)
-            return b;
+            return qAbs(b);
         b %= a;
         if (b == 0)
-            return a;
+            return qAbs(a);
         a %= b;
     }
 }
@@ -50,14 +50,22 @@ template <typename T> std::tuple<T,T,T> gcdex(T v1, T v2)
     while (true)
     {
         if (v2 == 0)
+        {
+            if (v1 < 0)
+                return std::tuple<T,T,T>(-a1, -b1, -v1);
             return std::tuple<T,T,T>(a1, b1, v1);
+        }
         a2 -= q * a1;
         b2 -= q * b1;
 midloop:
         q = v1 / v2;
         v1 -= q * v2;
         if (v1 == 0)
+        {
+            if (v2 < 0)
+                return std::tuple<T,T,T>(-a2, -b2, -v2);
             return std::tuple<T,T,T>(a2, b2, v2);
+        }
         a1 -= q * a2;
         b1 -= q * b2;
         q = v2 / v1;
@@ -71,13 +79,21 @@ template <typename T> std::tuple<T,T,T,T,T> gcdex2(T v1, T v2)
     while (true)
     {
         if (v2 == 0)
+        {
+            if (v1 < 0)
+                return std::tuple<T,T,T,T,T>(-a1, -b1, -v1, qAbs(b2), qAbs(a2));
             return std::tuple<T,T,T,T,T>(a1, b1, v1, qAbs(b2), qAbs(a2));
+        }
         q = v1 / v2;
         v1 -= q * v2;
         a1 -= q * a2;
         b1 -= q * b2;
         if (v1 == 0)
+        {
+            if (v2 < 0)
+                return std::tuple<T,T,T,T,T>(-a2, -b2, -v2, qAbs(b1), qAbs(a1));
             return std::tuple<T,T,T,T,T>(a2, b2, v2, qAbs(b1), qAbs(a1));
+        }
         q = v2 / v1;
         v2 -= q * v1;
         a2 -= q * a1;
