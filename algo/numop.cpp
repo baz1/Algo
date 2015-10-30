@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015, Rémi Bazin <bazin.remi@gmail.com>
+ * Copyright (c) 2015, Remi Bazin <bazin.remi@gmail.com>
  * All rights reserved.
  * See LICENSE for licensing details.
  */
