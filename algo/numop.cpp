@@ -103,3 +103,9 @@
 
     \note This function uses the square exponentiation method.
 */
+
+/*!
+    \fn T pmod(T a, const T &b)
+    \relates <algo/numop.h>
+    Returns \a a modulo \a b in the interval \tt{[0,qAbs(b)-1]}.
+*/

@@ -125,4 +125,12 @@ template <typename T> T tpow(const T a, int p)
     return result;
 }
 
+template <typename T> T pmod(T a, const T &b)
+{
+    a %= b;
+    if (a < 0)
+        a += qAbs(b);
+    return a;
+}
+
 #endif // ALGO_NUMOP_H
